@@ -1,0 +1,30 @@
+.CV_main {
+  border: 1px solid blue;
+}
+
+.input_box {
+  margin: 5px;
+}
+.single {
+  height: 20px;
+}
+.double {
+  height: 40px;
+}
+.triple {
+  height: 60px;
+}
+.quadriple {
+  height: 80px;
+}
+.show {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease-in-out;
+}
+.hide {
+  height: 0;
+}
+.heading {
+  display: flex;
+}

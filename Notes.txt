@@ -1,6 +1,7 @@
 Header Bar
-CV Information
+CV Main
 	Personal Information
+	//create a text input box component that take a name and returns a form element
 		First	
 		Last
 		Title
@@ -46,3 +47,12 @@ Footer
 //Minimize buttons on each section
 //use alice in wonderland cv template
 //https://www.overleaf.com/latex/templates/twenty-seconds-curriculum-vitae/kfgsngtymkfj
+
+
+//readme
+
+
+//toDO 
+//1. basic layout
+//2. collect information
+//3. CV builder

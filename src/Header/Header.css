@@ -1,0 +1,6 @@
+.header {
+  overflow: hidden;
+  background-color: hsl(0, 0%, 43%);
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}

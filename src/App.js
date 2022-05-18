@@ -1,14 +1,18 @@
 import "./App.css";
 import { Component } from "react";
+import CVMain from "./CV-Main/CVMain";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="main-page">
-        <div>Header</div>
-        <div>cv-Information</div>
+      <div className="page">
+        <Header />
+        <CVMain />
         <div>CV</div>
-        <div>Footer</div>
+        <Footer />
       </div>
     );
   }
