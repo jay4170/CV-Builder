@@ -1,0 +1,48 @@
+Header Bar
+CV Information
+	Personal Information
+		First	
+		Last
+		Title
+		Photo
+		Address
+		PhoneNumber
+		Email
+		About Me
+	Experience
+		//allow the ability to add multiple experiences
+		//Once added, shrink and allow edits or deletion(with confirmation)
+		Position
+		Company
+		City
+		From
+		To
+		Add
+	Education
+		//allow the ability to add multiple experiences
+		//Once added, shrink and allow edits or deletion(with confirmation)
+		Institution Name
+		City, Country
+		Subject
+		Duration
+		Add
+	Buttons
+		Save as PDF
+		Example CV(with confirmation)
+		Reset
+CV
+Footer
+
+
+
+
+
+
+
+
+
+//Notes
+//Save information on reload
+//Minimize buttons on each section
+//use alice in wonderland cv template
+//https://www.overleaf.com/latex/templates/twenty-seconds-curriculum-vitae/kfgsngtymkfj
