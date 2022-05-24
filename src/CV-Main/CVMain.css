@@ -1,5 +1,8 @@
 .CV_main {
   border: 1px solid blue;
+  margin: 20px;
+  padding: 10px;
+  max-width: 900px;
 }
 
 .input_box {
