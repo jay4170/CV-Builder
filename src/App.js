@@ -3,18 +3,72 @@ import { Component } from "react";
 import CVMain from "./CV-Main/CVMain";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-import CVMirror from "./CV/CVMirror";
-import Test from "./CV/components/Test.js";
+import CVPreview from "./CV/CVPreview";
+import blank from "./CV/components/Blank";
+import Test from "./CV/components/Test";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = blank();
+  }
+
+  handlePersonalChange = (e) => {
+    const { name, value } = e.target;
+    this.setState((prevState) => ({
+      ...prevState,
+      personalInfo: {
+        ...prevState.personalInfo,
+        [name]: value,
+      },
+    }));
+  };
+
+  handleExperienceChange = (e) => {
+    const { name, value } = e.target;
+
+    this.setState((prevState) => ({
+      ...prevState,
+      experienceInfo: {
+        ...prevState.experienceInfo,
+        [name]: value,
+      },
+    }));
+  };
+  handleEducationChange = (e) => {
+    const { name, value } = e.target;
+
+    this.setState((prevState) => ({
+      ...prevState,
+      educationInfo: {
+        ...prevState.educationInfo,
+        [name]: value,
+      },
+    }));
+  };
+
+  resetOptions = () => {
+    this.setState(blank());
+  };
+  exampleOptions = () => {
+    this.setState(Test());
+  };
+
   render() {
     return (
       <div className="page">
         <Header />
-        <div className="cv_creator_page">
-          <CVMain />
+
+        <div className="">
+          <CVMain
+            resetOptions={this.resetOptions}
+            exampleOptions={this.exampleOptions}
+            handlePersonalChange={this.handlePersonalChange}
+            handleExperienceChange={this.handleExperienceChange}
+            handleEducationChange={this.handleEducationChange}
+          />
         </div>
-        <CVMirror cvInfo={Test}></CVMirror>
+        <CVPreview cvInfo={this.state} />
         <Footer />
       </div>
     );

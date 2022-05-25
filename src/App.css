@@ -1,4 +1,4 @@
-.cv_creator_page{
-    display: flex;
-    justify-content: center
+.cv_creator_page {
+  display: flex;
+  align-content: center;
 }

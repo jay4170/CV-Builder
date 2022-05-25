@@ -55,4 +55,5 @@ Footer
 //toDO 
 //1. basic layout
 //2. collect information
-//3. CV builder
+//3. Hide arrows
+//4.

@@ -12,18 +12,49 @@ class Education extends Component {
           <ArrowButt />
         </div>
         <form>
-          <InputBox placeholder={"Course"} type={"text"} height={"single"} />
+          <InputBox
+            placeholder={"Course"}
+            type={"text"}
+            height={"single"}
+            handleChange={this.props.handleEducationChange}
+            value={this.value}
+            name="course"
+          />
           <InputBox
             placeholder={"Institution"}
             type={"text"}
             height={"single"}
-          />{" "}
-          <InputBox placeholder={"City"} type={"text"} height={"single"} />{" "}
+            handleChange={this.props.handleEducationChange}
+            value={this.value}
+            name="school"
+          />
+          <InputBox
+            placeholder={"City"}
+            type={"text"}
+            height={"single"}
+            handleChange={this.props.handleEducationChange}
+            value={this.value}
+            name="city"
+          />
           <div>
             <label>From</label>
-            <InputBox placeholder={"From"} type={"date"} height={"single"} />
+            <InputBox
+              placeholder={"From"}
+              type={"date"}
+              height={"single"}
+              handleChange={this.props.handleEducationChange}
+              value={this.value}
+              name="eduFrom"
+            />
             <label>To</label>
-            <InputBox placeholder={"To"} type={"date"} height={"single"} />
+            <InputBox
+              placeholder={"To"}
+              type={"date"}
+              height={"single"}
+              handleChange={this.props.handleEducationChange}
+              value={this.value}
+              name="eduTo"
+            />
           </div>
         </form>
         <PlusButt />

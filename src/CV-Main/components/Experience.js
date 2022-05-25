@@ -17,13 +17,37 @@ class Experience extends Component {
             placeholder={"Company"}
             type={"text"}
             height={"single"}
-          />{" "}
-          <InputBox placeholder={"City"} type={"text"} height={"single"} />{" "}
+            handleChange={this.props.handleExperienceChange}
+            value={this.value}
+            name="company"
+          />
+          <InputBox
+            placeholder={"City"}
+            type={"text"}
+            height={"single"}
+            handleChange={this.props.handleExperienceChange}
+            value={this.value}
+            name="city"
+          />
           <div>
             <label>From</label>
-            <InputBox placeholder={"From"} type={"date"} height={"single"} />
+            <InputBox
+              placeholder={"From"}
+              type={"date"}
+              height={"single"}
+              handleChange={this.props.handleExperienceChange}
+              value={this.value}
+              name="expFrom"
+            />
             <label>To</label>
-            <InputBox placeholder={"To"} type={"date"} height={"single"} />
+            <InputBox
+              placeholder={"To"}
+              type={"date"}
+              height={"single"}
+              handleChange={this.props.handleExperienceChange}
+              value={this.value}
+              name="expTo"
+            />
           </div>
         </form>
         <PlusButt />
