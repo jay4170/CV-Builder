@@ -43,17 +43,11 @@ Footer
 
 
 //Notes
+//get Print button working
+//Upload photos
+//change Favicon
+//add ability to add mutliple experiences
 //Save information on reload
-//Minimize buttons on each section
+//refactor changeHandlers
 //use alice in wonderland cv template
 //https://www.overleaf.com/latex/templates/twenty-seconds-curriculum-vitae/kfgsngtymkfj
-
-
-//readme
-
-
-//toDO 
-//1. basic layout
-//2. collect information
-//3. Hide arrows
-//4.

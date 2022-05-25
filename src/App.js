@@ -61,6 +61,7 @@ class App extends Component {
 
         <div className="">
           <CVMain
+            options={this.state}
             resetOptions={this.resetOptions}
             exampleOptions={this.exampleOptions}
             handlePersonalChange={this.handlePersonalChange}

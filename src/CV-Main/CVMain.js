@@ -14,6 +14,7 @@ class CVMain extends Component {
       <div className="CV_main">
         <h1 className="CV_heading">Your information</h1>
         <PersonalInfo handlePersonalChange={this.props.handlePersonalChange} />
+      
         <Experience
           handleExperienceChange={this.props.handleExperienceChange}
         />

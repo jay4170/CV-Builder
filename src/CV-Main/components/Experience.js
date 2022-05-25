@@ -1,4 +1,3 @@
-import ArrowButt from "./ArrowButt";
 import InputBox from "./InputBox";
 import { Component } from "react";
 import PlusButt from "./PlusButt";
@@ -7,9 +6,8 @@ class Experience extends Component {
   render() {
     return (
       <div>
-        <div className="heading">
+        <div >
           <h3>Experience</h3>
-          <ArrowButt />
         </div>
         <form>
           <InputBox placeholder={"Position"} type={"text"} height={"single"} />

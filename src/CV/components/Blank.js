@@ -10,19 +10,23 @@ export default function Blank() {
       email: " ",
       about: " ",
     },
-    experienceInfo: {
-      position: " ",
-      company: " ",
-      city: " ",
-      expFrom: " ",
-      expTo: " ",
-    },
-    educationInfo: {
-      course: " ",
-      school: " ",
-      city: " ",
-      eduFrom: " ",
-      eduTo: " ",
-    },
+    experienceInfo: [
+      {
+        position: " ",
+        company: " ",
+        city: " ",
+        expFrom: " ",
+        expTo: " ",
+      },
+    ],
+    educationInfo: [
+      {
+        course: " ",
+        school: " ",
+        city: " ",
+        eduFrom: " ",
+        eduTo: " ",
+      },
+    ],
   };
 }

@@ -1,4 +1,3 @@
-import ArrowButt from "./ArrowButt";
 import InputBox from "./InputBox";
 import { Component } from "react";
 import PlusButt from "./PlusButt";
@@ -9,7 +8,6 @@ class Education extends Component {
       <div>
         <div className="heading">
           <h3>Education</h3>
-          <ArrowButt />
         </div>
         <form>
           <InputBox

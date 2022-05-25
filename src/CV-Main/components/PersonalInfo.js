@@ -1,4 +1,3 @@
-import ArrowButt from "./ArrowButt";
 import InputBox from "./InputBox";
 import { Component } from "react";
 
@@ -11,7 +10,6 @@ class Experience extends Component {
       <div>
         <div className="heading">
           <h3>Personal Information</h3>
-          <ArrowButt />
         </div>
         <form className="show">
           <InputBox

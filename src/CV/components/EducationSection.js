@@ -15,6 +15,7 @@ export default class EducationSection extends Component {
             From {info.eduFrom} To {info.eduTo}
           </h4>
         </div>
+        <br></br>
       </div>
     );
   }

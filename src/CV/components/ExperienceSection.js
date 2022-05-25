@@ -14,6 +14,7 @@ export default class ExperienceSection extends Component {
             From {info.expFrom} To {info.expTo}
           </h4>
         </div>
+        <br></br>
       </div>
     );
   }
