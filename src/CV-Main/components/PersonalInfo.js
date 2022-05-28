@@ -2,12 +2,9 @@ import InputBox from "./InputBox";
 import { Component } from "react";
 
 class Experience extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
-      <div>
+      <div >
         <div className="heading">
           <h3>Personal Information</h3>
         </div>

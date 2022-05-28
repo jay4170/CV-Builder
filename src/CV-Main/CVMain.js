@@ -6,9 +6,7 @@ import SubmitResetButtons from "./components/SubmitResetButtons";
 import "./CVMain.css";
 
 class CVMain extends Component {
-  constructor(props) {
-    super(props);
-  }
+ 
   render() {
     return (
       <div className="CV_main">

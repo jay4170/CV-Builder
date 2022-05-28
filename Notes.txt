@@ -44,7 +44,7 @@ Footer
 
 //Notes
 //get Print button working
-//Upload photos
+//Upload photo
 //change Favicon
 //add ability to add mutliple experiences
 //Save information on reload

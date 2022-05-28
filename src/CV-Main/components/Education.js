@@ -55,7 +55,7 @@ class Education extends Component {
             />
           </div>
         </form>
-        <PlusButt />
+        <PlusButt clickHandler={this.plusButtonClickHandler} />
       </div>
     );
   }

@@ -20,13 +20,11 @@ class CVPreview extends Component {
 
         <h2 className="margin_top">Work Experience</h2>
         {experienceInfo.map((entry) => {
-          console.log(entry);
           return <ExperienceSection key={uuidv4()} experienceInfo={entry} />;
         })}
 
         <h2 className="margin_top">Education</h2>
         {educationInfo.map((entry) => {
-          console.log(entry);
           return <EducationSection key={uuidv4()} educationInfo={entry} />;
         })}
       </div>
