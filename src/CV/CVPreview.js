@@ -10,23 +10,15 @@ class CVPreview extends Component {
     const personalInfo = this.props.cvInfo.personalInfo;
     const experienceInfo = this.props.cvInfo.experienceInfo;
     const educationInfo = this.props.cvInfo.educationInfo;
-
     return (
       <div className="CV_mirror_main">
         <h1 className="mirror_heading">CV Preview</h1>
-
         <h3>Personal Info</h3>
         <PersonalSection className="indent" personalInfo={personalInfo} />
-
         <h2 className="margin_top">Work Experience</h2>
-        {experienceInfo.map((entry) => {
-          return <ExperienceSection key={uuidv4()} experienceInfo={entry} />;
-        })}
-
+        <ExperienceSection key={uuidv4()} experienceInfo={experienceInfo} />
         <h2 className="margin_top">Education</h2>
-        {educationInfo.map((entry) => {
-          return <EducationSection key={uuidv4()} educationInfo={entry} />;
-        })}
+        <EducationSection key={uuidv4()} educationInfo={educationInfo} />
       </div>
     );
   }
