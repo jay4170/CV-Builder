@@ -29,21 +29,27 @@ class App extends Component {
 
     this.setState((prevState) => ({
       ...prevState,
-      experienceInfo: {
-        ...prevState.experienceInfo,
-        [name]: value,
-      },
+      experienceInfo: [
+        {
+          ...prevState.experienceInfo[0],
+          [name]: value,
+        },
+      ],
     }));
   };
+
+  //hardcoded array 0 in until we figure out a way to access dataset in target
   handleEducationChange = (e) => {
     const { name, value } = e.target;
 
     this.setState((prevState) => ({
       ...prevState,
-      educationInfo: {
-        ...prevState.educationInfo,
-        [name]: value,
-      },
+      educationInfo: [
+        {
+          ...prevState.educationInfo[0],
+          [name]: value,
+        },
+      ],
     }));
   };
 
