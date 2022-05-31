@@ -1,21 +1,17 @@
 import "./App.css";
-import { Component } from "react";
 import CVMain from "./CV-Main/CVMain";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import CVPreview from "./CV/CVPreview";
 import blank from "./CV/components/Blank";
 import Test from "./CV/components/Test";
+import { useState } from "react";
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = blank();
-  }
-
-  handlePersonalChange = (e) => {
+const App = () => {
+  const [info, setInfo] = useState(blank());
+  const handlePersonalChange = (e) => {
     const { name, value } = e.target;
-    this.setState((prevState) => ({
+    setInfo((prevState) => ({
       ...prevState,
       personalInfo: {
         ...prevState.personalInfo,
@@ -24,10 +20,10 @@ class App extends Component {
     }));
   };
 
-  handleExperienceChange = (e) => {
+  const handleExperienceChange = (e) => {
     const { name, value } = e.target;
 
-    this.setState((prevState) => ({
+    setInfo((prevState) => ({
       ...prevState,
       experienceInfo: [
         {
@@ -39,10 +35,10 @@ class App extends Component {
   };
 
   //hardcoded array 0 in until we figure out a way to access dataset in target
-  handleEducationChange = (e) => {
+  const handleEducationChange = (e) => {
     const { name, value } = e.target;
 
-    this.setState((prevState) => ({
+    setInfo((prevState) => ({
       ...prevState,
       educationInfo: [
         {
@@ -53,33 +49,31 @@ class App extends Component {
     }));
   };
 
-  resetOptions = () => {
-    this.setState(blank());
+  const resetOptions = () => {
+    setInfo(blank());
   };
-  exampleOptions = () => {
-    this.setState(Test());
+  const exampleOptions = () => {
+    setInfo(Test());
   };
 
-  render() {
-    return (
-      <div className="page">
-        <Header />
+  return (
+    <div className="page">
+      <Header />
 
-        <div className="">
-          <CVMain
-            options={this.state}
-            resetOptions={this.resetOptions}
-            exampleOptions={this.exampleOptions}
-            handlePersonalChange={this.handlePersonalChange}
-            handleExperienceChange={this.handleExperienceChange}
-            handleEducationChange={this.handleEducationChange}
-          />
-        </div>
-        <CVPreview cvInfo={this.state} />
-        <Footer />
+      <div className="">
+        <CVMain
+          options={info}
+          resetOptions={resetOptions}
+          exampleOptions={exampleOptions}
+          handlePersonalChange={handlePersonalChange}
+          handleExperienceChange={handleExperienceChange}
+          handleEducationChange={handleEducationChange}
+        />
       </div>
-    );
-  }
-}
+      <CVPreview cvInfo={info} />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
