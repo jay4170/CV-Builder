@@ -1,29 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
 import PersonalInfo from "./components/PersonalInfo";
 import SubmitResetButtons from "./components/SubmitResetButtons";
 import "./CVMain.css";
 
-class CVMain extends Component {
- 
-  render() {
-    return (
-      <div className="CV_main">
-        <h1 className="CV_heading">Your information</h1>
-        <PersonalInfo handlePersonalChange={this.props.handlePersonalChange} />
-      
-        <Experience
-          handleExperienceChange={this.props.handleExperienceChange}
-        />
-        <Education handleEducationChange={this.props.handleEducationChange} />
-        <SubmitResetButtons
-          resetOptions={this.props.resetOptions}
-          exampleOptions={this.props.exampleOptions}
-        />
-      </div>
-    );
-  }
-}
+const CVMain = (props) => {
+  return (
+    <div className="CV_main">
+      <h1 className="CV_heading">Your information</h1>
+      <PersonalInfo handlePersonalChange={props.handlePersonalChange} />
+
+      <Experience handleExperienceChange={props.handleExperienceChange} />
+      <Education handleEducationChange={props.handleEducationChange} />
+      <SubmitResetButtons
+        resetOptions={props.resetOptions}
+        exampleOptions={props.exampleOptions}
+      />
+    </div>
+  );
+};
 
 export default CVMain;

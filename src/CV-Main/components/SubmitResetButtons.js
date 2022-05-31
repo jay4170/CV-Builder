@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-class SubmitResetButtons extends Component {
-  render() {
-    return (
-      <div>
-        <button>Print</button>
-        <button onClick={this.props.resetOptions}>Reset</button>
-        <button onClick={this.props.exampleOptions}>Example</button>
-      </div>
-    );
-  }
-}
+const SubmitResetButtons = (props) => {
+  return (
+    <div>
+      <button>Print</button>
+      <button onClick={props.resetOptions}>Reset</button>
+      <button onClick={props.exampleOptions}>Example</button>
+    </div>
+  );
+};
 
 export default SubmitResetButtons;

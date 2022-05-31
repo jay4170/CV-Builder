@@ -1,19 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 
-class InputBox extends Component {
- 
-  render() {
-    return (
-      <input
-        placeholder={this.props.placeholder}
-        type={this.props.type}
-        className={`input_box ${this.props.height}`}
-        onChange={this.props.handleChange}
-        name={this.props.name}
-        value={this.props.value}
-      ></input>
-    );
-  }
-}
+const InputBox = (props) => {
+  return (
+    <input
+      placeholder={props.placeholder}
+      type={props.type}
+      className={`input_box ${props.height}`}
+      onChange={props.handleChange}
+      name={props.name}
+    ></input>
+  );
+};
 
 export default InputBox;

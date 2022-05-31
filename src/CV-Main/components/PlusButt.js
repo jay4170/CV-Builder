@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import plus from "../../images/plus.png";
 import "./PlusButt.css";
 
-class PlusButt extends Component {
-  render() {
-    return (
-      <button onClick={this.props.clickHandler} className="plus_button">
-        <img src={plus} className="plus_img" alt="" />
-      </button>
-    );
-  }
-}
+const PlusButt = (props) => {
+  return (
+    <button onClick={props.clickHandler} className="plus_button">
+      <img src={plus} className="plus_img" alt="" />
+    </button>
+  );
+};
 
 export default PlusButt;
