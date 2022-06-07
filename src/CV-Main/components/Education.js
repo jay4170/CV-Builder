@@ -38,6 +38,7 @@ const Education = (props) => {
             handleChange={props.handleEducationChange}
             name="eduFrom"
           />
+          <br className="break"></br>
           <label>To</label>
           <InputBox
             placeholder={"To"}
@@ -48,7 +49,7 @@ const Education = (props) => {
           />
         </div>
       </form>
-      <PlusButt clickHandler={props.plusButtonClickHandler} />
+      {/* <PlusButt clickHandler={props.plusButtonClickHandler} /> */}
     </div>
   );
 };

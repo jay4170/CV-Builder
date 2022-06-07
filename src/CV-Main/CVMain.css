@@ -1,11 +1,13 @@
 .CV_main {
-  border: 1px solid blue;
+  width: 100%;
   margin: 20px;
   padding: 10px;
-  max-width: 900px;
+  max-width: 700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
-.CV_heading{
-    text-align: center;
+.CV_heading {
+  text-align: center;
 }
 .input_box {
   margin: 5px;
@@ -32,4 +34,9 @@
 }
 .heading {
   display: flex;
+}
+@media only screen and (min-width: 600px) {
+  .break {
+    display: none;
+  }
 }

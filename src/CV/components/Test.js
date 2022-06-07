@@ -19,13 +19,13 @@ export default function Test() {
         expFrom: "16.09.1992",
         expTo: "21.09.1993",
       },
-      {
-        position: "Trainee CoolGuy",
-        company: "Coolest Inc",
-        city: "Kuala Lumpur",
-        expFrom: "11.2.1321",
-        expTo: "21.09.1993",
-      },
+      // {
+      //   position: "Trainee CoolGuy",
+      //   company: "Coolest Inc",
+      //   city: "Kuala Lumpur",
+      //   expFrom: "11.2.1321",
+      //   expTo: "21.09.1993",
+      // },
     ],
     educationInfo: [
       {
@@ -35,13 +35,13 @@ export default function Test() {
         eduFrom: "16.09.1922",
         eduTo: "21.09.1933",
       },
-      {
-        course: "Cool 101",
-        school: "Not too cool for this School",
-        city: "Amsterdam",
-        eduFrom: "16.09.1922",
-        eduTo: "21.09.7777",
-      },
+      // {
+      //   course: "Cool 101",
+      //   school: "Not too cool for this School",
+      //   city: "Amsterdam",
+      //   eduFrom: "16.09.1922",
+      //   eduTo: "21.09.7777",
+      // },
     ],
   };
 }

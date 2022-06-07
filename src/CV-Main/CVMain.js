@@ -8,15 +8,19 @@ import "./CVMain.css";
 const CVMain = (props) => {
   return (
     <div className="CV_main">
-      <h1 className="CV_heading">Your information</h1>
-      <PersonalInfo handlePersonalChange={props.handlePersonalChange} />
+      <div>
+        <h1 className="CV_heading">Your information</h1>
+        <PersonalInfo handlePersonalChange={props.handlePersonalChange} />
 
-      <Experience handleExperienceChange={props.handleExperienceChange} />
-      <Education handleEducationChange={props.handleEducationChange} />
-      <SubmitResetButtons
-        resetOptions={props.resetOptions}
-        exampleOptions={props.exampleOptions}
-      />
+        <Experience handleExperienceChange={props.handleExperienceChange} />
+        <Education handleEducationChange={props.handleEducationChange} />
+  
+        <SubmitResetButtons
+          handlePrint={props.handlePrint}
+          resetOptions={props.resetOptions}
+          exampleOptions={props.exampleOptions}
+        />
+      </div>
     </div>
   );
 };

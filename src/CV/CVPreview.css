@@ -1,13 +1,10 @@
-.CV_mirror_main {
-  border: 1px solid blue;
-  margin: 20px;
-  padding: 10px;
-  max-width: 900px;
+
+.mirror_heading {
+  text-align: center;
 }
-.mirror_heading{
-    text-align: center;
-}.indent{
-    padding-left: 15em;
-}.margin_top{
-    margin-top: 50px;
+.indent {
+  padding-left: 15em;
+}
+.margin_top {
+  margin-top: 50px;
 }

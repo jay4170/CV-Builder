@@ -1,5 +1,4 @@
 import InputBox from "./InputBox";
-import { Component } from "react";
 import PlusButt from "./PlusButt";
 
 const Experience = (props) => {
@@ -39,6 +38,7 @@ const Experience = (props) => {
             handleChange={props.handleExperienceChange}
             name="expFrom"
           />
+          <br className="break"></br>
           <label>To</label>
           <InputBox
             placeholder={"To"}
@@ -49,7 +49,7 @@ const Experience = (props) => {
           />
         </div>
       </form>
-      <PlusButt />
+      {/* <PlusButt /> */}
     </div>
   );
 };

@@ -1,11 +1,10 @@
 import "./App.css";
 import CVMain from "./CV-Main/CVMain";
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
 import CVPreview from "./CV/CVPreview";
 import blank from "./CV/components/Blank";
 import Test from "./CV/components/Test";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useReactToPrint } from "react-to-print";
 
 const App = () => {
   const [info, setInfo] = useState(blank());
@@ -48,6 +47,9 @@ const App = () => {
       ],
     }));
   };
+  const componentRef = useRef();
+
+  const handlePrint = useReactToPrint({ content: () => componentRef.current });
 
   const resetOptions = () => {
     setInfo(blank());
@@ -58,20 +60,19 @@ const App = () => {
 
   return (
     <div className="page">
-      <Header />
+      <CVMain
+        options={info}
+        resetOptions={resetOptions}
+        exampleOptions={exampleOptions}
+        handlePersonalChange={handlePersonalChange}
+        handleExperienceChange={handleExperienceChange}
+        handleEducationChange={handleEducationChange}
+        handlePrint={handlePrint}
+      />
 
-      <div className="">
-        <CVMain
-          options={info}
-          resetOptions={resetOptions}
-          exampleOptions={exampleOptions}
-          handlePersonalChange={handlePersonalChange}
-          handleExperienceChange={handleExperienceChange}
-          handleEducationChange={handleEducationChange}
-        />
+      <div className="CV_mirror_main" ref={componentRef}>
+        <CVPreview cvInfo={info} />
       </div>
-      <CVPreview cvInfo={info} />
-      <Footer />
     </div>
   );
 };
