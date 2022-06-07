@@ -1,8 +1,18 @@
-# CV-Builder
+# CV Builder
 
-An app made with react to help users design and produce CV's.
+An application created using ReactJs to create and build minimalist resumes.
 
-## Tech Stack
+## Description
 
-<img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/javascript.svg" width="40">  	  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/react.svg" width="40">	
+Create a minimalist CV and print it to PDF! Currently only a basic CV template is available, with more to come!
 
+## Version History
+
+* 0.1
+    * Initial Release
+
+
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+* [The Odin project](www.theodinproject.com)
