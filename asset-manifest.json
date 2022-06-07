@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/CV-Builder/static/css/main.df864118.css",
-    "main.js": "/CV-Builder/static/js/main.7abe4dc1.js",
+    "main.css": "/CV-Builder/static/css/main.e17001d7.css",
+    "main.js": "/CV-Builder/static/js/main.2afcade9.js",
     "index.html": "/CV-Builder/index.html",
-    "main.df864118.css.map": "/CV-Builder/static/css/main.df864118.css.map",
-    "main.7abe4dc1.js.map": "/CV-Builder/static/js/main.7abe4dc1.js.map"
+    "main.e17001d7.css.map": "/CV-Builder/static/css/main.e17001d7.css.map",
+    "main.2afcade9.js.map": "/CV-Builder/static/js/main.2afcade9.js.map"
   },
   "entrypoints": [
-    "static/css/main.df864118.css",
-    "static/js/main.7abe4dc1.js"
+    "static/css/main.e17001d7.css",
+    "static/js/main.2afcade9.js"
   ]
 }
